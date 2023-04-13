@@ -48,7 +48,14 @@ let wishList = [];
 section1.addEventListener('click', function(event) {
     if (event.target.tagName === 'IMG') {
       const itemName = event.target.id;
-      const isItemExists = wishList.some(item => item.name === itemName);
+      let isItemExists = false;
+  
+      for (const item of wishList) {
+        if (item.name === itemName) {
+          isItemExists = true;
+          break;
+        }
+      }
   
       if (!isItemExists) {
         const div = document.createElement('div');
