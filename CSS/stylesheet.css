@@ -1,0 +1,115 @@
+h1{
+    font-family: 'DynaPuff', cursive;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+
+ul li{
+    color: #371959 ;
+}
+
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #93BFDC ;
+    color: #371959
+}
+
+nav{
+    background-color: #093756;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #093756 ;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 99vw;
+    text-align: center;
+}
+
+.wish-list{
+    background-color:#E0DEF4 ;
+}
+
+
+main h2{
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.img-wish{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+.nothidden{
+    visibility: visible;
+}
+
+.wish-para{
+    display: flex;
+    
+    width:25vw;
+    height:5vh;
+    justify-content: center;
+}
+
+hr{
+    display: flex;
+    height: 40vh;
+    width: 25vw ;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: 24vw 24vw;
+    grid-template-rows: 8vh 8vh;
+    column-gap: 7vw;
+    row-gap: 16vh;
+}
+
+@media screen and (max-width:640px) {
+    header ul{
+        flex-direction: column;
+       
+    }
+    li{
+        text-align: center;
+    }
+    
+}
+
+.imgs{
+    width: 20vw;
+    height: 15vh;
+    
+}
+
+.wish-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .last-item {
+    border: 2px solid #000;
+  }
+  
